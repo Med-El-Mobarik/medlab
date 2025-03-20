@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.1...v1.0.2) (2025-03-20)
+
+
+### Bug Fixes
+
+* exlude the git folder from the zip command ([#7](https://github.com/Med-El-Mobarik/medlab/issues/7)) ([3e2248a](https://github.com/Med-El-Mobarik/medlab/commit/3e2248acb5d6519866d447d212c39aa54147ea0f)), closes [#1](https://github.com/Med-El-Mobarik/medlab/issues/1) [#3](https://github.com/Med-El-Mobarik/medlab/issues/3)
+
 ## [1.0.1](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.0...v1.0.1) (2025-03-20)
 
 
