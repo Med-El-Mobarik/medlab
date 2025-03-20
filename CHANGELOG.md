@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.0...v1.0.1) (2025-03-20)
+
+
+### Bug Fixes
+
+* exclude the node_modules from the zip command ([#6](https://github.com/Med-El-Mobarik/medlab/issues/6)) ([baa4851](https://github.com/Med-El-Mobarik/medlab/commit/baa4851b2ef95de89ba13615625b00c520989aba)), closes [#1](https://github.com/Med-El-Mobarik/medlab/issues/1) [#3](https://github.com/Med-El-Mobarik/medlab/issues/3)
+
 # 1.0.0 (2025-03-20)
 
 
