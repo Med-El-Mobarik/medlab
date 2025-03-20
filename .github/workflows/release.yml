@@ -30,7 +30,7 @@ jobs:
         run: npm clean-install
       - name: Create a ZIP of the repository
         run: |
-          zip -r repo.zip . -x "node_modules/*"
+          zip -r repo.zip . -x "node_modules/*" -x ".git/*"
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
