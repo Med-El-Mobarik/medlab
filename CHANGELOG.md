@@ -1,3 +1,23 @@
+# [2.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.4...v2.0.0) (2025-03-21)
+
+
+### Bug Fixes
+
+* add a directory to the zip command ([79afda9](https://github.com/Med-El-Mobarik/medlab/commit/79afda99541cf33859f4bb9fd6efb2c8993e56b0))
+* exclude the node_modules from the zip command ([30efefc](https://github.com/Med-El-Mobarik/medlab/commit/30efefcd4a6e0b2afc4ceab3982faf6820c68daa))
+* exlude the git folder from the zip command ([ce77ce0](https://github.com/Med-El-Mobarik/medlab/commit/ce77ce08f55925107797d64c91931cd7454bf81e))
+* replace master with main ([#3](https://github.com/Med-El-Mobarik/medlab/issues/3)) ([7605f25](https://github.com/Med-El-Mobarik/medlab/commit/7605f252cc10d02da01f2479f4b1806caad647e8))
+
+
+### Features
+
+* containerisation & dependencies update ([0d6156f](https://github.com/Med-El-Mobarik/medlab/commit/0d6156f53e9051892f21845101d6a262517bdcdb))
+
+
+### BREAKING CHANGES
+
+* containerisation & dependencies update
+
 ## [1.0.4](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.3...v1.0.4) (2025-03-21)
 
 
