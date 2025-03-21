@@ -1,14 +1,13 @@
-import { ReportHandler } from 'web-vitals';
+// src/reportWebVitals.ts
+import { ReportCallback, onCLS, onFID, onFCP, onLCP, onTTFB } from 'web-vitals';
 
-const reportWebVitals = (onPerfEntry?: ReportHandler) => {
+const reportWebVitals = (onPerfEntry?: ReportCallback ): void => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
+    onCLS(onPerfEntry);  // Cumulative Layout Shift
+    onFID(onPerfEntry);  // First Input Delay
+    onFCP(onPerfEntry);  // First Contentful Paint
+    onLCP(onPerfEntry);  // Largest Contentful Paint
+    onTTFB(onPerfEntry); // Time to First Byte
   }
 };
 
