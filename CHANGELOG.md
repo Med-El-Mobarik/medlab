@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.3...v1.0.4) (2025-03-21)
+
+
+### Reverts
+
+* Revert "feat!: containerisation, update dependencies, 0 vulnerabilities ([#10](https://github.com/Med-El-Mobarik/medlab/issues/10))" ([f36614a](https://github.com/Med-El-Mobarik/medlab/commit/f36614af9705bb288ea7dfd6e60c8903577286e3))
+* Revert "fix: minor patch" ([ca5307e](https://github.com/Med-El-Mobarik/medlab/commit/ca5307e76ccb186bf44a21dad33fa0fa28b355ed))
+
 ## [1.0.3](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.2...v1.0.3) (2025-03-21)
 
 
