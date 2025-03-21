@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.2...v1.0.3) (2025-03-21)
+
+
+### Bug Fixes
+
+* minor patch ([06bdb6f](https://github.com/Med-El-Mobarik/medlab/commit/06bdb6f8eab0721f4a5891632ba2fce55475a5d1))
+
 ## [1.0.2](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.1...v1.0.2) (2025-03-20)
 
 
