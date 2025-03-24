@@ -1,3 +1,13 @@
+# [4.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v3.0.0...v4.0.0) (2025-03-24)
+
+
+* photo and title ([#15](https://github.com/Med-El-Mobarik/medlab/issues/15)) ([e30146a](https://github.com/Med-El-Mobarik/medlab/commit/e30146a6196a6784e5da4f02c10db9fc798567c4)), closes [#9](https://github.com/Med-El-Mobarik/medlab/issues/9) [#12](https://github.com/Med-El-Mobarik/medlab/issues/12) [#13](https://github.com/Med-El-Mobarik/medlab/issues/13)
+
+
+### BREAKING CHANGES
+
+* migrate to vite and vitest
+
 # [3.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v2.0.0...v3.0.0) (2025-03-24)
 
 
