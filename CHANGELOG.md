@@ -1,3 +1,25 @@
+# [5.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v4.0.2...v5.0.0) (2025-03-24)
+
+
+### Bug Fixes
+
+* fix the scroll to experience section ([2e97cde](https://github.com/Med-El-Mobarik/medlab/commit/2e97cdef9de6b8bcf2c025caa9a24876a0e31147))
+* update profile photo ([9838d12](https://github.com/Med-El-Mobarik/medlab/commit/9838d12dabc13c692c52f0ce4726623fa6cfb61b))
+* update title and remove old index html ([f7b2256](https://github.com/Med-El-Mobarik/medlab/commit/f7b2256d87383428a421105a9ba87e724facfae3))
+
+
+### Features
+
+* add multi language select with i18next ([#13](https://github.com/Med-El-Mobarik/medlab/issues/13)) ([f485188](https://github.com/Med-El-Mobarik/medlab/commit/f485188409b01a6ac8ff17afe44a0fd90e139586))
+* Add profile section and small screen adaptation ([f191867](https://github.com/Med-El-Mobarik/medlab/commit/f191867b194443b710e28a69d77a048d0205f8c1))
+* migrate to vite ([#12](https://github.com/Med-El-Mobarik/medlab/issues/12)) ([7a64e79](https://github.com/Med-El-Mobarik/medlab/commit/7a64e79f5d542a74c221a4140d65e65ec5311e83))
+* update project dependencies and relove vulnerabilities ([#9](https://github.com/Med-El-Mobarik/medlab/issues/9)) ([0e42150](https://github.com/Med-El-Mobarik/medlab/commit/0e421502c0a54f27ab42d8869f45cb0dacb4d69d))
+
+
+### BREAKING CHANGES
+
+* migrate to vite and vitest
+
 ## [4.0.2](https://github.com/Med-El-Mobarik/medlab/compare/v4.0.1...v4.0.2) (2025-03-24)
 
 
