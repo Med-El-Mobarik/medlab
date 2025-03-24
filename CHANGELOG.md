@@ -1,3 +1,13 @@
+# [3.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v2.0.0...v3.0.0) (2025-03-24)
+
+
+* Dev ([#14](https://github.com/Med-El-Mobarik/medlab/issues/14)) ([2c6e4a0](https://github.com/Med-El-Mobarik/medlab/commit/2c6e4a08b5ea6bbce0d7a1da81a98c92c51bc062)), closes [#9](https://github.com/Med-El-Mobarik/medlab/issues/9) [#12](https://github.com/Med-El-Mobarik/medlab/issues/12) [#13](https://github.com/Med-El-Mobarik/medlab/issues/13)
+
+
+### BREAKING CHANGES
+
+* migrate to vite and vitest
+
 # [2.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v1.0.4...v2.0.0) (2025-03-21)
 
 
