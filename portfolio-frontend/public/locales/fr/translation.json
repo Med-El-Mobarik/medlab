@@ -1,7 +1,9 @@
 {
-    "job": "Ingénieur DevOps et Développeur Full stack",
-    "expertise": "Expertise",
-    "experience": "Expérience",
-    "projects": "Projets",
-    "contact": "Contact"
+  "job": "Ingénieur DevOps et Développeur Full stack",
+  "expertise": "Expertise",
+  "experience": "Expérience",
+  "projects": "Projets",
+  "contact": "Contact",
+  "profile": "Profile",
+  "bio": "Ingénieur DevOps et Lead Développeur, j’ai 3 ans d’expérience en Développement full stack, automatisation, CI/CD et gestion d’infrastructure. Spécialisé en Kubernetes, Docker et Cloud AWS, j’interviens sur l’ensemble du cycle de vie des projets, du développement à l’administration système, en passant par le DevOps et la gestion d’équipe en méthodologie agile. Passionné par les défis techniques, j’aime proposer des solutions innovantes pour optimiser les infrastructures et améliorer la scalabilité des applications. Mon approche globale allie expertise technique et compétences managériales pour garantir des projets performants et efficaces."
 }

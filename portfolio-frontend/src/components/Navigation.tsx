@@ -21,7 +21,7 @@ import { withTranslation } from 'react-i18next';
 
 const drawerWidth = 240;
 //const navItems = [['Expertise', 'experience'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
-const navItems = ['expertise', 'experience', 'projects', 'contact']
+const navItems = ['profile', 'expertise', 'experience', 'projects', 'contact']
 
 function Navigation({parentToChild, modeChange, t, i18n}: any) {
 
