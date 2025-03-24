@@ -1,3 +1,11 @@
+## [4.0.1](https://github.com/Med-El-Mobarik/medlab/compare/v4.0.0...v4.0.1) (2025-03-24)
+
+
+### Reverts
+
+* Revert "chore(release): 4.0.0 [skip ci]" ([0b1c087](https://github.com/Med-El-Mobarik/medlab/commit/0b1c087d7e2d447d308896d01bc0b58b82b6aaa6))
+* Revert "photo and title ([#15](https://github.com/Med-El-Mobarik/medlab/issues/15))" ([6fadf37](https://github.com/Med-El-Mobarik/medlab/commit/6fadf37fbc415c7f765ff4be0d37b9530cf0ce32))
+
 # [3.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v2.0.0...v3.0.0) (2025-03-24)
 
 
