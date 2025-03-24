@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/Med-El-Mobarik/medlab/compare/v4.0.1...v4.0.2) (2025-03-24)
+
+
+### Bug Fixes
+
+* update profile photo, title and remove old index html ([#17](https://github.com/Med-El-Mobarik/medlab/issues/17)) ([c2d5dab](https://github.com/Med-El-Mobarik/medlab/commit/c2d5dab2114ebf088a54cd9210e765d0ff00bf09))
+
 ## [4.0.1](https://github.com/Med-El-Mobarik/medlab/compare/v4.0.0...v4.0.1) (2025-03-24)
 
 
