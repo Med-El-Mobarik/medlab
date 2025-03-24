@@ -15,16 +15,21 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
+import { withTranslation } from 'react-i18next';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+//const navItems = [['Expertise', 'experience'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const navItems = ['expertise', 'experience', 'projects', 'contact']
 
-function Navigation({parentToChild, modeChange}: any) {
+function Navigation({parentToChild, modeChange, t, i18n}: any) {
 
   const {mode} = parentToChild;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [language, setLanguage] = useState<string>(i18n.language.split('-')[0]);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -56,6 +61,12 @@ function Navigation({parentToChild, modeChange}: any) {
       console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
     }
   };
+  
+  const handleLanguageChange = (event: any) => {
+    const newLanguage = event.target.value;
+    setLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
+  };
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
@@ -63,13 +74,14 @@ function Navigation({parentToChild, modeChange}: any) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
-              <ListItemText primary={item[0]} />
+          <ListItem key={item} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item)}>
+              <ListItemText primary={t(item)} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
+      <Divider />
     </Box>
   );
 
@@ -87,17 +99,30 @@ function Navigation({parentToChild, modeChange}: any) {
           >
             <MenuIcon />
           </IconButton>
-          {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
-          )}
+          <Box style={{display: 'flex', alignItems: 'center'}}>
+            {mode === 'dark' ? (
+              <LightModeIcon onClick={() => modeChange()}/>
+            ) : (
+              <DarkModeIcon onClick={() => modeChange()}/>
+            )}
+              <Select
+                style={{padding: '2px 4px'}}
+                value={language}
+                onChange={handleLanguageChange}
+                variant="standard"
+                sx={{backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 1, ml: 2 }}
+              >
+                <MenuItem value="en">EN</MenuItem>
+                <MenuItem value="fr">FR</MenuItem>
+            </Select>
+          </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
-                {item[0]}
+              <Button key={item} onClick={() => scrollToSection(item)} sx={{ color: '#fff' }}>
+                {t(item)}
               </Button>
             ))}
+
           </Box>
         </Toolbar>
       </AppBar>
@@ -121,4 +146,4 @@ function Navigation({parentToChild, modeChange}: any) {
   );
 }
 
-export default Navigation;
+export default withTranslation()(Navigation);
