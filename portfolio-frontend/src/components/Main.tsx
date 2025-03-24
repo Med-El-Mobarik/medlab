@@ -12,7 +12,7 @@ function Main() {
       <div className="about-section">
         <div className="image-wrapper">
           <img
-            src="https://my-aws-assets.s3.us-west-2.amazonaws.com/portfolio-img/avatar_circle.jpeg"
+            src="/images/profile.jpg"
             alt="Avatar"
           />
         </div>
