@@ -11,22 +11,19 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img
-            src="/images/profile.jpg"
-            alt="Avatar"
-          />
+          <img src="/images/profile.jpg" alt="Avatar" />
         </div>
         <div className="content">
           <div className="social_icons">
             <a
-              href="https://github.com/yujisatojr"
+              href="https://github.com/Med-El-Mobarik"
               target="_blank"
               rel="noreferrer"
             >
               <GitHubIcon />
             </a>
             <a
-              href="https://www.linkedin.com/in/yujisato/"
+              href="https://www.linkedin.com/in/med-el-mobarik/"
               target="_blank"
               rel="noreferrer"
             >
@@ -38,14 +35,14 @@ function Main() {
 
           <div className="mobile_social_icons">
             <a
-              href="https://github.com/yujisatojr"
+              href="https://github.com/Med-El-Mobarik"
               target="_blank"
               rel="noreferrer"
             >
               <GitHubIcon />
             </a>
             <a
-              href="https://www.linkedin.com/in/yujisato/"
+              href="https://www.linkedin.com/in/med-el-mobarik/"
               target="_blank"
               rel="noreferrer"
             >

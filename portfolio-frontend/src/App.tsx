@@ -7,7 +7,8 @@ import {
   Contact,
   Navigation,
   Footer,
-  Profile
+  Profile,
+  Loading
 } from "./components";
 import FadeIn from "./components/FadeIn";
 import "./index.scss";
@@ -28,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <Suspense fallback="loading">
+    <Suspense fallback={<Loading />}>
       <div
         className={`main-container ${
           mode === "dark" ? "dark-mode" : "light-mode"
