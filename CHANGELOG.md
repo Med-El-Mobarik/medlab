@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/Med-El-Mobarik/medlab/compare/v5.0.0...v5.0.1) (2025-03-25)
+
+
+### Bug Fixes
+
+* correct the linkedin and github links ([7be9a8b](https://github.com/Med-El-Mobarik/medlab/commit/7be9a8b7b43780a8e569e9c86cc2f1b099eddc25))
+
 # [5.0.0](https://github.com/Med-El-Mobarik/medlab/compare/v4.0.2...v5.0.0) (2025-03-24)
 
 
