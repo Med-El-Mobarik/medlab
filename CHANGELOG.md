@@ -1,3 +1,17 @@
+# [5.1.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.0.1...v5.1.0) (2025-03-27)
+
+
+### Bug Fixes
+
+* **auth:** first fix ([3fcc103](https://github.com/Med-El-Mobarik/medlab/commit/3fcc103bf5bbf69f8aa1cf0c31ad0cad3f5aa96f))
+* second fix ([497fff0](https://github.com/Med-El-Mobarik/medlab/commit/497fff01267b2fc180d2cedbc01fef924a8a4ceb))
+
+
+### Features
+
+* feat 2 ([5ded600](https://github.com/Med-El-Mobarik/medlab/commit/5ded6000cce423e200f47d298130a32548202bdc))
+* **synch:** feat 1 ([06fb8db](https://github.com/Med-El-Mobarik/medlab/commit/06fb8dbf25d7da783dbb18c91705f91a58ee7e6d))
+
 ## [5.0.1](https://github.com/Med-El-Mobarik/medlab/compare/v5.0.0...v5.0.1) (2025-03-25)
 
 
