@@ -1,3 +1,11 @@
+# [5.2.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.1.0...v5.2.0) (2025-03-28)
+
+
+### Features
+
+* **projects:** update projects sections with my projects ([68ed82a](https://github.com/Med-El-Mobarik/medlab/commit/68ed82a92a2151308c9632fa148c83472451e9af))
+* **section:** update expertise and timeline sections ([0b5629d](https://github.com/Med-El-Mobarik/medlab/commit/0b5629d57f1d0f844f442859ddba0efccd309b15))
+
 # [5.1.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.0.1...v5.1.0) (2025-03-27)
 
 
