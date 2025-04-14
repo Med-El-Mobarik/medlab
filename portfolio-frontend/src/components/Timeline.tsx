@@ -13,7 +13,6 @@ import "../assets/styles/Timeline.scss";
 
 function Timeline() {
   const { t } = useTranslation();
-  console.log(t("experience.primezone.title"));
   return (
     <div id="experience">
       <div className="items-container">
