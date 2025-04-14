@@ -1,3 +1,10 @@
+# [5.3.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.2.0...v5.3.0) (2025-04-14)
+
+
+### Features
+
+* Contact session ([3dacf3e](https://github.com/Med-El-Mobarik/medlab/commit/3dacf3ebea9f51e88f6aa07fec389b925767c6f5))
+
 # [5.2.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.1.0...v5.2.0) (2025-03-28)
 
 
