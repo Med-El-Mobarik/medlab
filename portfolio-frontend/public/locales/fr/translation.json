@@ -44,5 +44,6 @@
   "firstName": "Prénom",
   "lastName": "Nom",
   "sendMailSucessMessage": "E-mail envoyé avec succès",
-  "sendMailFailMessage": "Une erreur s'est produite, veuillez réessayer plus tard !"
+  "sendMailFailMessage": "Une erreur s'est produite, veuillez réessayer plus tard !",
+  "resume": "Cv"
 }

@@ -44,5 +44,6 @@
   "firstName": "First Name",
   "lastName": "Last Name",
   "sendMailSucessMessage": "Email sent successfully",
-  "sendMailFailMessage": "Something went wrong, please try again later !"
+  "sendMailFailMessage": "Something went wrong, please try again later !",
+  "resume": "Resume"
 }
