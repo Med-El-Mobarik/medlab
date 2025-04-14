@@ -5,58 +5,85 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import TextField from "@mui/material/TextField";
+import CircularProgress from "@mui/material/CircularProgress";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
-  const [name, setName] = useState<string>("");
+  const { t } = useTranslation();
+
+  const [sendmailSpinner, setSendmailSpinner] = useState<boolean>(false);
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
 
-  const [nameError, setNameError] = useState<boolean>(false);
+  const [firstNameError, setFirstNameError] = useState<boolean>(false);
+  const [LastNameError, setLastNameError] = useState<boolean>(false);
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
+  const [phoneError, setPhoneError] = useState<boolean>(false);
 
   const form = useRef(null);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = async (e: any) => {
     e.preventDefault();
+    setSendmailSpinner(true);
 
-    setNameError(name === "");
-    setEmailError(email === "");
-    setMessageError(message === "");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const frenchPhoneRegex = /^(?:\+33|0)[67]\d{8}$/;
 
-    /* Uncomment below if you want to enable the emailJS */
+    // Validate first
+    const firstNameValid = firstName.trim() !== "";
+    const lastNameValid = lastName.trim() !== "";
+    const emailValid = emailRegex.test(email);
+    const messageValid = message.trim() !== "";
+    const phoneValid = frenchPhoneRegex.test(phone);
 
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
+    // Update the errors based on validation
+    setFirstNameError(!firstNameValid);
+    setLastNameError(!lastNameValid);
+    setEmailError(!emailValid);
+    setMessageError(!messageValid);
+    setPhoneError(!phoneValid);
 
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+    // Only proceed if all fields are valid
+    if (
+      firstNameValid &&
+      lastNameValid &&
+      emailValid &&
+      messageValid &&
+      phoneValid
+    ) {
+      try {
+        console.log("test 1");
+        const apiUrl = import.meta.env.VITE_API_URL;
+        await axios.post(`${apiUrl}/mailing`, {
+          email: email,
+          name: `${firstName} ${lastName}`,
+          message: message,
+          phoneNumber: phone,
+        });
+        console.log("test 1");
+        toast.success(t('sendMailSucessMessage'), { duration: 3000 });
+      } catch (error) {
+        console.log(error);
+        toast.error(t('sendMailFailMessage'), {
+          duration: 3000,
+        });
+      }
+    }
+
+    setSendmailSpinner(false);
   };
 
   return (
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>Contact Me</h1>
-          <p>
-            Got a project waiting to be realized? Let's collaborate and make it
-            happen!
-          </p>
+          <h1>{t("contactMe")}</h1>
           <Box
             ref={form}
             component="form"
@@ -68,35 +95,59 @@ function Contact() {
               <TextField
                 required
                 id="outlined-required"
-                label="Your Name"
-                placeholder="What's your name?"
-                value={name}
+                label={t("firstName")}
+                placeholder={t("firstName")}
+                value={firstName}
                 onChange={(e) => {
-                  setName(e.target.value);
+                  setFirstName(e.target.value);
                 }}
-                error={nameError}
-                helperText={nameError ? "Please enter your name" : ""}
+                error={firstNameError}
+                helperText={firstNameError ? t("firstNameErrorMessage") : ""}
               />
               <TextField
                 required
                 id="outlined-required"
-                label="Email / Phone"
-                placeholder="How can I reach you?"
+                label={t("lastName")}
+                placeholder={t("lastName")}
+                value={lastName}
+                onChange={(e) => {
+                  setLastName(e.target.value);
+                }}
+                error={LastNameError}
+                helperText={LastNameError ? t("lastNameErrorMessage") : ""}
+              />
+            </div>
+            <div className="form-flex">
+              <TextField
+                required
+                id="outlined-required"
+                label="Email"
+                placeholder="Email"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
                 error={emailError}
-                helperText={
-                  emailError ? "Please enter your email or phone number" : ""
-                }
+                helperText={emailError ? t("mailErrorMessage") : ""}
+              />
+              <TextField
+                required
+                id="outlined-required"
+                label="Phone"
+                placeholder="Phone"
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
+                error={phoneError}
+                helperText={phoneError ? t("phoneErrorMessage") : ""}
               />
             </div>
             <TextField
               required
               id="outlined-multiline-static"
               label="Message"
-              placeholder="Send me any inquiries or questions"
+              placeholder="Message"
               multiline
               rows={10}
               className="body-form"
@@ -105,15 +156,19 @@ function Contact() {
                 setMessage(e.target.value);
               }}
               error={messageError}
-              helperText={messageError ? "Please enter the message" : ""}
+              helperText={messageError ? t("messageErrorMessage") : ""}
             />
-            <Button
-              variant="contained"
-              endIcon={<SendIcon />}
-              onClick={sendEmail}
-            >
-              Send
-            </Button>
+            {sendmailSpinner ? (
+              <CircularProgress style={{ float: "right" }} />
+            ) : (
+              <Button
+                variant="contained"
+                endIcon={<SendIcon />}
+                onClick={sendEmail}
+              >
+                {t("sendMailButtonText")}
+              </Button>
+            )}
           </Box>
         </div>
       </div>

@@ -18,6 +18,16 @@
     color: white;
   }
 
+  input {
+    color: #050f0b;
+    z-index: 1;
+  }
+
+  textarea {
+    color: #050f0b;
+    z-index: 1;
+  }
+
   fieldset {
     background-color: white;
   }
@@ -25,7 +35,7 @@
 
 label {
   font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
+  font-family: "DomaineDispNar-Medium", sans-serif;
 }
 
 .form-flex {

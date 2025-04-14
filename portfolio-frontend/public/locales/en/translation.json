@@ -33,5 +33,16 @@
   "projects.archive.name": "Open Source Archive",
   "projects.archive.description": "(Username: G138473665, Password: G138473665) A project built with Next.js, Node.js, Google Firebase, MongoDB. It's a platform I built for my college colleagues to help them access lessons, exams, etc. Also, an administration space to add and delete documents.",
   "projects.formation.name": "Open Source Archive",
-  "projects.formation.description": "A project built with Next.js and MySQL. It has a landing page for new students and an inscription page with an admin space."
+  "projects.formation.description": "A project built with Next.js and MySQL. It has a landing page for new students and an inscription page with an admin space.",
+  "contactMe": "Contact Me",
+  "sendMailButtonText": "SEND",
+  "firstNameErrorMessage": "Please enter your first name",
+  "lastNameErrorMessage": "Please enter your last name",
+  "mailErrorMessage": "Please enter a valid email",
+  "phoneErrorMessage": "Please enter a valid phone number (e.g. 0699999999 or +33799999999)",
+  "messageErrorMessage": "Please enter the message",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "sendMailSucessMessage": "Email sent successfully",
+  "sendMailFailMessage": "Something went wrong, please try again later !"
 }

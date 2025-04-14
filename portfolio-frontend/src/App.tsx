@@ -10,6 +10,7 @@ import {
   Profile,
   Loading
 } from "./components";
+import { Toaster } from 'react-hot-toast';
 import FadeIn from "./components/FadeIn";
 import "./index.scss";
 
@@ -35,6 +36,7 @@ function App() {
           mode === "dark" ? "dark-mode" : "light-mode"
         }`}
       >
+        <Toaster position="top-right" reverseOrder={false} />
         <Navigation parentToChild={{ mode }} modeChange={handleModeChange} />
         <FadeIn transitionDuration={700}>
           <Main />

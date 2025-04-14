@@ -33,5 +33,16 @@
   "projects.archive.name": "Archive Open Source",
   "projects.archive.description": "(Nom d'utilisateur : G138473665, Mot de passe : G138473665) Un projet construit avec Next.js, Node.js, Google Firebase, MongoDB. C'est une plateforme que j'ai créée pour mes collègues de collège afin de les aider à accéder aux cours, examens, etc. Il y a également un espace d'administration pour ajouter et supprimer des documents.",
   "projects.formation.name": "Archive Open Source",
-  "projects.formation.description": "Un projet construit avec Next.js et MySQL. Il dispose d'une page d'accueil pour les nouveaux étudiants et d'une page d'inscription avec un espace d'administration."
+  "projects.formation.description": "Un projet construit avec Next.js et MySQL. Il dispose d'une page d'accueil pour les nouveaux étudiants et d'une page d'inscription avec un espace d'administration.",
+  "contactMe": "Contactez Moi",
+  "sendMailButtonText": "ENVOYER",
+  "firstNameErrorMessage": "Veuillez entrer votre prénom",
+  "lastNameErrorMessage": "Veuillez entrer votre nom",
+  "mailErrorMessage": "Veuillez entrer une adresse e-mail valide",
+  "phoneErrorMessage": "Veuillez entrer un numéro de téléphone valide (ex : 0699999999 ou +33799999999)",
+  "messageErrorMessage": "Veuillez entrer le message",
+  "firstName": "Prénom",
+  "lastName": "Nom",
+  "sendMailSucessMessage": "E-mail envoyé avec succès",
+  "sendMailFailMessage": "Une erreur s'est produite, veuillez réessayer plus tard !"
 }

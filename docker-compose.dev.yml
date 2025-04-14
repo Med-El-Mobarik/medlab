@@ -10,3 +10,16 @@ services:
       - ./portfolio-frontend:/app
       - /app/node_modules
     restart: on-failure
+  back:
+    container_name: medlab-back
+    env_file:
+      - ./portfolio-backend/.env
+    build:
+      context: ./portfolio-backend
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./portfolio-backend:/app
+      - /app/node_modules
+    restart: on-failure
