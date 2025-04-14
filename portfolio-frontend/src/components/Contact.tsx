@@ -8,8 +8,11 @@ import TextField from "@mui/material/TextField";
 import CircularProgress from "@mui/material/CircularProgress";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
+
   const [sendmailSpinner, setSendmailSpinner] = useState<boolean>(false);
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
@@ -55,20 +58,20 @@ function Contact() {
       phoneValid
     ) {
       try {
-        console.log("test 1")
+        console.log("test 1");
         const apiUrl = import.meta.env.VITE_API_URL;
         await axios.post(`${apiUrl}/mailing`, {
           email: email,
           name: `${firstName} ${lastName}`,
           message: message,
-          phoneNumber: phone
-        })
-        console.log("test 1")
-        toast.success("Email sent successfully", { duration: 2000 });
+          phoneNumber: phone,
+        });
+        console.log("test 1");
+        toast.success(t('sendMailSucessMessage'), { duration: 3000 });
       } catch (error) {
-        console.log(error)
-        toast.error("Something went wrong, please try again later !", {
-          duration: 2000,
+        console.log(error);
+        toast.error(t('sendMailFailMessage'), {
+          duration: 3000,
         });
       }
     }
@@ -80,7 +83,7 @@ function Contact() {
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>Contact Me</h1>
+          <h1>{t("contactMe")}</h1>
           <Box
             ref={form}
             component="form"
@@ -92,28 +95,26 @@ function Contact() {
               <TextField
                 required
                 id="outlined-required"
-                label="First Name"
-                placeholder="First Name"
+                label={t("firstName")}
+                placeholder={t("firstName")}
                 value={firstName}
                 onChange={(e) => {
                   setFirstName(e.target.value);
                 }}
                 error={firstNameError}
-                helperText={
-                  firstNameError ? "Please enter your first name" : ""
-                }
+                helperText={firstNameError ? t("firstNameErrorMessage") : ""}
               />
               <TextField
                 required
                 id="outlined-required"
-                label="Last Name"
-                placeholder="Last Name"
+                label={t("lastName")}
+                placeholder={t("lastName")}
                 value={lastName}
                 onChange={(e) => {
                   setLastName(e.target.value);
                 }}
                 error={LastNameError}
-                helperText={LastNameError ? "Please enter your last name" : ""}
+                helperText={LastNameError ? t("lastNameErrorMessage") : ""}
               />
             </div>
             <div className="form-flex">
@@ -127,7 +128,7 @@ function Contact() {
                   setEmail(e.target.value);
                 }}
                 error={emailError}
-                helperText={emailError ? "Please enter a valid email" : ""}
+                helperText={emailError ? t("mailErrorMessage") : ""}
               />
               <TextField
                 required
@@ -139,11 +140,7 @@ function Contact() {
                   setPhone(e.target.value);
                 }}
                 error={phoneError}
-                helperText={
-                  phoneError
-                    ? "Please enter a valid phone number (e.g. 0699999999 or +33799999999)"
-                    : ""
-                }
+                helperText={phoneError ? t("phoneErrorMessage") : ""}
               />
             </div>
             <TextField
@@ -159,7 +156,7 @@ function Contact() {
                 setMessage(e.target.value);
               }}
               error={messageError}
-              helperText={messageError ? "Please enter the message" : ""}
+              helperText={messageError ? t("messageErrorMessage") : ""}
             />
             {sendmailSpinner ? (
               <CircularProgress style={{ float: "right" }} />
@@ -169,7 +166,7 @@ function Contact() {
                 endIcon={<SendIcon />}
                 onClick={sendEmail}
               >
-                Send
+                {t("sendMailButtonText")}
               </Button>
             )}
           </Box>
