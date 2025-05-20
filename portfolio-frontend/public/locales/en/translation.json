@@ -32,7 +32,7 @@
   "projects.medlab.description": "A project built from scratch where I applied many concepts (Design, CI/CD, Web server, nginx, Docker, Github Actions, Jenkins)",
   "projects.archive.name": "Open Source Archive",
   "projects.archive.description": "(Username: G138473665, Password: G138473665) A project built with Next.js, Node.js, Google Firebase, MongoDB. It's a platform I built for my college colleagues to help them access lessons, exams, etc. Also, an administration space to add and delete documents.",
-  "projects.formation.name": "Open Source Archive",
+  "projects.formation.name": "Presentation and registration for the Master's course",
   "projects.formation.description": "A project built with Next.js and MySQL. It has a landing page for new students and an inscription page with an admin space.",
   "contactMe": "Contact Me",
   "sendMailButtonText": "SEND",
