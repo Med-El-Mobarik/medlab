@@ -1,3 +1,10 @@
+# [5.5.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.4.0...v5.5.0) (2025-05-20)
+
+
+### Features
+
+* add certbot ([0308d57](https://github.com/Med-El-Mobarik/medlab/commit/0308d57f89ee99e75c0a47cea312e4c88ef490a4))
+
 # [5.4.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.3.0...v5.4.0) (2025-05-20)
 
 
