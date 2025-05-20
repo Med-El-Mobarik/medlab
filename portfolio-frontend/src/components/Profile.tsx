@@ -10,7 +10,10 @@ function Profile() {
       <h1>Profile</h1>
       <div className="profile-container">
         <div className="profile-photo">
-          <img src="/images/profile.PNG" alt="Profile" />
+          <picture>
+            <source srcSet="/images/profile.webp" type="image/webp" />
+            <img src="/images/profile.PNG" alt="Profile" />
+          </picture>
         </div>
         <div className="profile-info">
           <h2>Bio</h2>
