@@ -1,3 +1,15 @@
+# [5.6.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.5.1...v5.6.0) (2025-05-20)
+
+
+### Bug Fixes
+
+* change smtp port and fix fernch translate ([e043b11](https://github.com/Med-El-Mobarik/medlab/commit/e043b11d53f88b273b7fd8420a8adc579217621d))
+
+
+### Features
+
+* improve performance ([1c06db3](https://github.com/Med-El-Mobarik/medlab/commit/1c06db3f47f9858dd4adc164e227542b7085d776))
+
 ## [5.5.1](https://github.com/Med-El-Mobarik/medlab/compare/v5.5.0...v5.5.1) (2025-05-20)
 
 
