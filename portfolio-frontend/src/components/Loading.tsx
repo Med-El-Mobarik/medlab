@@ -11,11 +11,14 @@ function Loading() {
 
   return (
     <div style={centeredStyle}>
-      <img
-        style={{ width: "200px" }}
-        src="/images/Logo.png"
-        alt="Logo loading ..."
-      />
+      <picture>
+        <source srcSet="/images/Logo.webp" type="image/webp" />
+        <img
+          src="/images/Logo.png"
+          alt="Logo loading ..."
+          style={{ width: "200px" }}
+        />
+      </picture>
     </div>
   );
 }

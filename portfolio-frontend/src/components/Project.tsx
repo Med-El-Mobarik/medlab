@@ -30,14 +30,17 @@ function Project() {
         {projects.map((project) => (
           <div key={project.id} className="project">
             <a href={project.url} target="_blank" rel="noreferrer">
-              <img
-                src={`/images/${project.id}.png`}
-                className="zoom"
-                alt="thumbnail"
-                width="100%"
-              />
+              <picture>
+                <source srcSet={`/images/${project.id}.webp`} type="image/webp" />
+                <img
+                  src={`/images/${project.id}.png`}
+                  alt={project.id}
+                  width="100%"
+                  className="zoom"
+                />
+              </picture>
             </a>
-            <a href={project.githubUrl} target="_blank" rel="noreferrer">
+            <a href={project.githubUrl} target="_blank" rel="noreferrer" aria-label="Github">
               <GitHubIcon fontSize="large" />
             </a>
             <h2>{t(`projects.${project.id}.name`)}</h2>

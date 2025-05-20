@@ -15,7 +15,10 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="/images/profile.jpg" alt="Avatar" />
+          <picture>
+            <source srcSet="/images/profile1.webp" type="image/webp" />
+            <img src="/images/profile.jpg" alt="Avatar" />
+          </picture>
         </div>
         <div className="content">
           <div className="social_icons">
@@ -23,6 +26,7 @@ function Main() {
               href="https://github.com/Med-El-Mobarik"
               target="_blank"
               rel="noreferrer"
+              aria-label="Github"
             >
               <GitHubIcon />
             </a>
@@ -30,6 +34,7 @@ function Main() {
               href="https://www.linkedin.com/in/med-el-mobarik/"
               target="_blank"
               rel="noreferrer"
+              aria-label="linkedin"
             >
               <LinkedInIcon />
             </a>
@@ -60,6 +65,7 @@ function Main() {
               href="https://github.com/Med-El-Mobarik"
               target="_blank"
               rel="noreferrer"
+              aria-label="Github"
             >
               <GitHubIcon />
             </a>
@@ -67,6 +73,7 @@ function Main() {
               href="https://www.linkedin.com/in/med-el-mobarik/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Linkedin"
             >
               <LinkedInIcon />
             </a>
