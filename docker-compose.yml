@@ -1,0 +1,35 @@
+services:
+  gateway:
+    container_name: medlab-gateway
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./portfolio-gateway/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./portfolio-gateway/certbot/www:/var/www/certbot
+      - ./portfolio-gateway/certbot/conf:/etc/letsencrypt
+    depends_on:
+      - front
+      - back
+    restart: on-failure
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./portfolio-gateway/certbot/www:/var/www/certbot
+      - ./portfolio-gateway/certbot/conf:/etc/letsencrypt
+    entrypoint: ""
+  front:
+    container_name: medlab-front
+    build:
+      context: ./portfolio-frontend
+      dockerfile: Dockerfile.prod
+    restart: on-failure
+  back:
+    container_name: medlab-back
+    env_file:
+      - ./portfolio-backend/.env
+    build:
+      context: ./portfolio-backend
+      dockerfile: Dockerfile.prod
+    restart: on-failure
