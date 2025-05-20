@@ -28,7 +28,7 @@
   "experience.apitech.manager.subTitle": "Apitech",
   "experience.apitech.manager.description": "Gestion de projet, support client pour les sujets complexes, et définition de la stratégie de commercialisation ainsi que de la feuille de route du projet.",
   "projects.section.title": "Projets Personnels",
-  "projects.medlab.name": "Laboratoire Médical",
+  "projects.medlab.name": "Laboratoire Med",
   "projects.medlab.description": "Un projet construit de A à Z où j'ai appliqué de nombreux concepts (Design, CI/CD, Serveur Web, nginx, Docker, Github Actions, Jenkins)",
   "projects.archive.name": "Archive Open Source",
   "projects.archive.description": "(Nom d'utilisateur : G138473665, Mot de passe : G138473665) Un projet construit avec Next.js, Node.js, Google Firebase, MongoDB. C'est une plateforme que j'ai créée pour mes collègues de collège afin de les aider à accéder aux cours, examens, etc. Il y a également un espace d'administration pour ajouter et supprimer des documents.",
