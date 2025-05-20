@@ -1,3 +1,16 @@
+# [5.4.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.3.0...v5.4.0) (2025-05-20)
+
+
+### Bug Fixes
+
+* Add translate for the school project name ([876c1ca](https://github.com/Med-El-Mobarik/medlab/commit/876c1ca26ea33b80950199f93af53da64ff6fca0))
+
+
+### Features
+
+* Add phone and email, get cv ([de44c64](https://github.com/Med-El-Mobarik/medlab/commit/de44c6405a5d21d8a0058d679622491f3da3bc34))
+* Add production dockers and an nginx gateway ([0d04e0d](https://github.com/Med-El-Mobarik/medlab/commit/0d04e0ddeeb8165b7e6ec4971e44c889fa125a14))
+
 # [5.3.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.2.0...v5.3.0) (2025-04-14)
 
 
