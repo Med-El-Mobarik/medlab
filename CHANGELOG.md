@@ -1,3 +1,10 @@
+## [5.5.1](https://github.com/Med-El-Mobarik/medlab/compare/v5.5.0...v5.5.1) (2025-05-20)
+
+
+### Bug Fixes
+
+* remove the entrypoint from the certbot service ([868ab2c](https://github.com/Med-El-Mobarik/medlab/commit/868ab2cd19d7d75a3c3235320356446e0c9d44b1))
+
 # [5.5.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.4.0...v5.5.0) (2025-05-20)
 
 
