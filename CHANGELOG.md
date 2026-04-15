@@ -1,3 +1,10 @@
+## [5.6.2](https://github.com/Med-El-Mobarik/medlab/compare/v5.6.1...v5.6.2) (2026-04-15)
+
+
+### Bug Fixes
+
+* webp to png ([33a24d8](https://github.com/Med-El-Mobarik/medlab/commit/33a24d8858c9ed65c105f738c1864aae53ffca5a))
+
 ## [5.6.1](https://github.com/Med-El-Mobarik/medlab/compare/v5.6.0...v5.6.1) (2026-04-15)
 
 
