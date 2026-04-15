@@ -1,3 +1,11 @@
+## [5.6.1](https://github.com/Med-El-Mobarik/medlab/compare/v5.6.0...v5.6.1) (2026-04-15)
+
+
+### Bug Fixes
+
+* experience ([fd81e18](https://github.com/Med-El-Mobarik/medlab/commit/fd81e187004c930acdd587e35d9e985d759a0ded))
+* update experience, cv and fix background image ([8973d27](https://github.com/Med-El-Mobarik/medlab/commit/8973d273f8d7cc38fab34863307df3abea784511))
+
 # [5.6.0](https://github.com/Med-El-Mobarik/medlab/compare/v5.5.1...v5.6.0) (2025-05-20)
 
 
